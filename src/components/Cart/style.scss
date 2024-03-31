@@ -1,0 +1,14 @@
+.cart {
+  min-height: 660px;
+  &__title {
+    color: var(--text-color) !important;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+}

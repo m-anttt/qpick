@@ -1,0 +1,25 @@
+@import url("./styles/_reset.scss");
+@import url("./styles/_vars.scss");
+@import url("./styles/_mixins.scss");
+@import url("./styles/_base.scss");
+@import url("./styles/_sticky-footer.scss");
+@media screen {
+}
+.container {
+  max-width: var(--container-width);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-big {
+  max-width: 1135px;
+  width: 100%;
+  margin: 0 auto;
+}
+.none {
+  display: none;
+}
+
+body {
+  background-color: var(--page-bg);
+}

@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-main);
+	font-weight: 500;
+	font-size: var(--font-size);
+	font-weight: var(--font-weight);
+	padding: 0 15px;
+}
+.section-title {
+	color: var(--accent-light);
+	font-size: var(--heading-size);
+	margin-bottom: 20px;
+}
+
+.menu-section {
+	margin-bottom: 28.5px;
+}
+
+
+
+.logo {
+	transition: all 0.5s ease;
+	&-icon{
+	width: 87px;
+	height: 30px;
+	}
+	&:hover {
+		transform: translateY(2px);
+	}
+}

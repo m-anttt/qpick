@@ -1,0 +1,31 @@
+@use "../App/styles/mixins" as mixins;
+.total {
+  &__wrapper {
+    @include mixins.card;
+    height: 114px;
+    max-width: 351px;
+    width: calc(310px + (351 - 310) * ((100vw - 320px) / (1110 - 320)));
+    padding: 19px 15px 19px 20px;
+    position: relative;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__purchase {
+    position: relative;
+    bottom: 60px;
+    background-color: var(--purchase);
+    color: var(--white);
+    border-radius: 20px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: all 1s ease;
+    &:hover {
+      background-color: var(--accent-bright);
+    }
+  }
+}

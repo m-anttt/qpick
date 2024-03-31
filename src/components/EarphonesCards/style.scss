@@ -1,0 +1,9 @@
+.earphones {
+  margin-bottom: 28.5px;
+  &__cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

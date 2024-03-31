@@ -1,0 +1,41 @@
+@use "../App/styles/mixins" as mixins;
+.header {
+  margin-bottom: 28px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  &__icon {
+    transition: all 0.5s ease;
+    border-bottom: 2px solid transparent;
+    width: 23px;
+    height: 23px;
+    position: relative;
+    &:hover {
+      border-bottom: 2px solid var(--accent-bright);
+      transform: scale(1.05);
+    }
+  }
+  &__count {
+    position: absolute;
+    top: -9px;
+    right: -10px;
+    display: block;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    @include mixins.centered-horizontal;
+    width: 17.5px;
+    height: 17.5px;
+    background-color: var(--accent-bright);
+  }
+}
